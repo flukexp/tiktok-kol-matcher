@@ -20,7 +20,7 @@ This solution enhances Convert Cake's influencer marketing services, helping bus
 - **Data Extraction**: Scrapes Facebook pages and websites using Apify actors.
 - **Thai Influencer Identification**: Searches TikTok for Thai-based KOLs matching target criteria.
 - **AI Analysis**: Utilizes the Mistral-7B model for deep brand and influencer content analysis.
-- **Engagement Metrics Calculation**: Assesses follower counts, engagement rates, and audience demographics.
+- **Engagement Metrics Calculation**: Assesses follower counts, engagement rates.
 - **Scoring and Ranking**: Computes compatibility scores to prioritize influencer recommendations.
 - **Report Generation**: Produces structured JSON and Markdown reports with collaboration suggestions and cautions.
 
@@ -105,7 +105,7 @@ python main.py --fb-page "https://www.facebook.com/convertcake" --website "https
 
 - `--fb-page` (required): Facebook page URL of the client.
 - `--website` (required): Website URL of the client.
-- `--count` (optional): Number of influencer matches to return (default: 20).
+- `--count` (optional): Number of influencer matches to return (default: 10).
 - `--output` (optional): Path to save the output JSON file.
 - `--api-key` (optional): Apify API key (if not set via `.env`).
 
@@ -157,7 +157,7 @@ tiktok-kol-matcher/
    - AI analyzes brand tone, audience, and key themes using Mistral-7B.
 
 3. **Influencer Analysis**  
-   - Fetches influencer metrics: follower counts, engagement rates, audience age/location.
+   - Fetches influencer metrics: follower counts, engagement rates.
 
 4. **Matching Algorithm**  
    - Combines text similarity and demographic matching into a weighted score.
@@ -186,7 +186,7 @@ Client Input (FB page URL + Website URL)
         ↓
 [Matching Engine]
  - Content Similarity Scoring
- - Engagement & Demographic Scoring
+ - Engagement Scoring
  - Weighted Ranking Algorithm
         ↓
 [Output Layer]
