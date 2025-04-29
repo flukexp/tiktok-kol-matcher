@@ -227,8 +227,6 @@ This project is licensed under the MIT License — see the LICENSE file for full
 
 ### Process Flow
 
-```
-
 | Phase                  | Details |
 |-------------------------|---------|
 | **Input**               | FB Page URL, Website URL |
@@ -239,7 +237,7 @@ This project is licensed under the MIT License — see the LICENSE file for full
 | **Matching Engine**     | Content Similarity + AI Match Analysis |
 | **Scoring & Ranking**   | Weighted ranking (65% AI, 25% Text Sim, 10% Engagement) |
 | **Output**              | Save results in JSON and Markdown |
-```
+
 
 ### Summary of Key Components in Code:
 
