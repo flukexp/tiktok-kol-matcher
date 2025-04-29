@@ -98,7 +98,7 @@ ollama==0.1.5
 ### CLI Usage Example
 
 ```bash
-python tiktok_kol_matcher.py --fb-page "https://www.facebook.com/convertcake" --website "https://convertcake.com" --count 10
+python main.py --fb-page "https://www.facebook.com/convertcake" --website "https://convertcake.com" --count 10
 ```
 
 ### Command-Line Arguments
